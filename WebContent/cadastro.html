@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+<meta charset="UTF-8">
+<title>Formulário</title>
+</head>
+<body>
+	<h1>Cadastro de Festas</h1>
+	
+	<form action="SalvarFesta" method="post" style="width: 450px">
+		
+		<fieldset> 
+			<legend>Dados da festa a ser cadastrada</legend> 
+						 
+			<p><label for="cliente">Cliente:</label> 
+			<input type="text" name="cliente" id="cliente" size="40" /></p> 
+			 
+			<p><label for="aniversariante">Aniversariante:</label> 
+			<input type="text" name="aniversariante" id="aniversariante" size="40" /></p> 
+			 
+			<p><label for="tema">Tema:</label> 
+			<select id="tema" name="tema"> 
+			<option> Homem de Ferro </option> 
+			<option> X-men </option>
+			<option> Cinderela </option> 
+			</select></p> 
+	 
+	        <p><label for="data">Data:</label>  
+	        <input type="date" name="data" id="data"/></p> 
+	 
+			<p><label for="horaInicio">Hora Início:</label> 
+			<input type="time" name="inicio" id="inicio"/></p> 
+	 
+			<p><label for="horaTermino">Hora Término:</label> 
+			<input type="time" name="fim" id="fim"/></p> 
+	 
+			<input type="submit" value="Cadastrar Festa" /> 
+		</fieldset>
+	</form>
+</body>
+</html>
